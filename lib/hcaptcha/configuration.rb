@@ -45,8 +45,8 @@ module Hcaptcha
 
       @secret_key = ENV['HCAPTCHA_SECRET_KEY']
       @site_key = ENV['HCAPTCHA_SITE_KEY']
-      @verify_url = nil
-      @api_server_url = nil
+      @verify_url = ENV['HCAPTCHA_VERIFY_URL']
+      @api_server_url = ENV['HCAPTCHA_API_SERVER_URL']
     end
 
     def secret_key!
